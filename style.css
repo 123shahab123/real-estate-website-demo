@@ -333,24 +333,31 @@ button {
   transform: translate(-50%, -50%) scale(1.08);
   background-color: #000000;
 }
-.hero-buttons {
-  overflow: hidden;
-  display: inline-block;
-  text-decoration: none;
-}
-.hero-buttons div {
+.hero-buttonzs {
+  margin-top: 31px;
   display: flex;
-  flex-direction: column;
-  transition: transform 0.4s ease;
-  height: 24px;
-  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-.hero-buttons div span {
-  height: 24px;
-  line-height: 24px;
+
+.hero-buttonzs > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 20px;
+  overflow: hidden;
 }
-.hero-buttons:hover div {
-  transform: translateY(-32px);
+
+.hero-buttonzs > a span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.hero-buttonzs > a:hover span {
+  transform: translateY(-2px);
 }
 /* =========================================================
    5. GENERAL SECTION HEADINGS
